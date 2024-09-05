@@ -6,9 +6,10 @@
   padding: 0;
 }
 
-/* Masquer les balises <p> dans la page */
-p {
-  display: none;
+.document-name {
+  font-size: 2rem;
+  padding: 15px 8%;
+  margin: 15px auto;
 }
 
 /* Modal form */
@@ -16,6 +17,10 @@ p {
 .modal-body {
   padding: 15px 8%;
   margin: 15px auto;
+  page-break-before: always;
+  page-break-after: always;
+  break-before: always;
+  break-after: always;
 }
 
 label {
@@ -36,6 +41,11 @@ h2,
 h3,
 h1 {
   margin: 3vh auto;
+}
+
+/* Masquer les balises <p> dans la page */
+p {
+  display: none;
 }
 
 .cmt-txt {

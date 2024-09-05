@@ -1,5 +1,7 @@
 function genererPDF() {
-  const element = document.getElementById("formulaire"); // Sélectionner l'élément à convertir en PDF
+  //   const element = document.getElementById("formulaire"); // Sélectionner l'élément à convertir en PDF
+
+  const element = document.body; // Prendre tout le body (incluant le h1 et le formulaire)
 
   // Afficher temporairement les balises <p>
   const paragraphes = document.querySelectorAll("p");
