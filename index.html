@@ -109,8 +109,19 @@
       <input type="radio" name="admission_conjoint_accueil_nuit" value="non" />
       NON<br />
 
-      <label for="Commentaire de l'établissement "></label>
-      <input type="text" name="Commentaire_de_l'etablissement" id="cmt-txt" />
+      <label for="Commentaire_de_etablissement "
+        >Commentaire de l'etablissement</label
+      >
+      <br />
+      <input
+        type="text"
+        name="Commentaire_de_etablissement"
+        id="cmt-txt"
+        class="cmt-txt"
+        placeholder="écrivez ici"
+        required="none"
+        autocomplete="email given-name bday additional-name family-name street-address address-line1 tel"
+      />
 
       <hr />
 
@@ -206,9 +217,13 @@
       <input type="checkbox" name="financement" value="apl" /> Aide
       personnalisée au logement (APL)<br />
       <input type="checkbox" name="financement" value="autre" /> Autre :
-      <input type="text" name="financement_autre" /><br />
+      <input type="text" name="financement_autre" /><br /><br />
 
-      <button type="button" onclick="genererPDF()">Générer le PDF</button>
+      <button type="button" onclick="genererPDF()" class="btn-pdf">
+        Générer le PDF
+      </button>
+      <!-- Bouton pour envoyer par email -->
+      <!-- <button type="button" onclick="envoyerEmail()">Envoyer par Email</button> -->
     </form>
     <script src="./js.js"></script>
     <script src="./html2pdfversion.js"></script>

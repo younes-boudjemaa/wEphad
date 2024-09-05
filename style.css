@@ -37,3 +37,36 @@ h3,
 h1 {
   margin: 3vh auto;
 }
+
+.cmt-txt {
+  width: 20vw;
+  height: 20vh;
+  margin: 2vh auto;
+}
+
+.btn-pdf {
+  cursor: pointer;
+  border: 0px solid rgb(187, 204, 0);
+  font-family: "system-ui";
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  transition: 208ms;
+  width: 225px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 10px;
+  background: rgb(75, 78, 82);
+  --hover-width: 265px;
+  --hover-bgc: #5e6369;
+  --hover-color: #ffffff;
+  --hover-borderSize: 0px;
+}
+
+.btn-pdf:hover {
+  color: rgb(255, 255, 255);
+  width: 265px;
+  background: rgb(94, 99, 105);
+  border-color: rgb(204, 0, 105);
+  border-width: 0px;
+  border-style: solid;
+}
