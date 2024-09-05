@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Demande EHPAD</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+    <!-- Inclure la bibliothèque html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      DOSSIER DE DEMANDE UNIQUE EN VUE D’UNE ADMISSION TEMPORAIRE OU PERMANENTE
+      EN ÉTABLISSEMENT D’HÉBERGEMENT POUR PERSONNES ÂGÉES DÉPENDANTES (EHPAD)
+    </h1>
+    <form class="modal-body" id="formulaire">
+      <h2>1. TYPE D’HÉBERGEMENT/ACCUEIL TEMPORAIRE SOUHAITÉ</h2>
+
+      <label
+        ><input type="checkbox" name="hebergement_permanent" /> Hébergement
+        permanent</label
+      ><br />
+      <label
+        ><input type="checkbox" name="hebergement_temporaire" /> Hébergement
+        temporaire</label
+      ><br />
+
+      <label>Date d’entrée souhaitée : </label
+      ><input type="date   " name="date_entree_souhaitee" /><br />
+
+      <label>Immédiate : </label>
+      <input type="radio" name="immediate" value="oui" /> OUI
+      <input type="radio" name="immediate" value="non" /> NON<br />
+
+      <label>Dans les 6 mois : </label>
+      <input type="radio" name="dans_6_mois" value="oui" /> OUI
+      <input type="radio" name="dans_6_mois" value="non" /> NON<br />
+
+      <label>Échéance plus lointaine : </label>
+      <input type="radio" name="echeance_lointaine" value="oui" /> OUI
+      <input type="radio" name="echeance_lointaine" value="non" /> NON<br />
+
+      <label>Date exacte (le cas échéant) : </label
+      ><input type="date" name="date_exacte" /><br />
+
+      <label>Durée souhaitée du séjour (en nombre de jours) : </label
+      ><input type="number" name="duree_sejour" /><br />
+
+      <label>Admission avec le conjoint souhaitée : </label>
+      <input type="radio" name="admission_conjoint" value="oui" /> OUI
+      <input type="radio" name="admission_conjoint" value="non" /> NON<br />
+
+      <h3>Accueil de jour</h3>
+
+      <label>Date d’entrée souhaitée : </label
+      ><input type="date" name="date_accueil_jour" /><br />
+
+      <label>Immédiate : </label>
+      <input type="radio" name="immediate_accueil_jour" value="oui" /> OUI
+      <input type="radio" name="immediate_accueil_jour" value="non" /> NON<br />
+
+      <label>Dans les 6 mois : </label>
+      <input type="radio" name="dans_6_mois_accueil_jour" value="oui" /> OUI
+      <input type="radio" name="dans_6_mois_accueil_jour" value="non" />
+      NON<br />
+
+      <label>Échéance plus lointaine : </label>
+      <input type="radio" name="echeance_lointaine_accueil_jour" value="oui" />
+      OUI
+      <input type="radio" name="echeance_lointaine_accueil_jour" value="non" />
+      NON<br />
+
+      <label>Date exacte (le cas échéant) : </label
+      ><input type="date" name="date_exacte_accueil_jour" /><br />
+
+      <label>Nombre de jours ou demi-journées par semaine : </label>
+      <input type="number" name="nb_jours_accueil_jour" /><br />
+
+      <h3>Accueil de nuit</h3>
+
+      <label>Date d’entrée souhaitée : </label
+      ><input type="date" name="date_accueil_nuit" /><br />
+
+      <label>Immédiate : </label>
+      <input type="radio" name="immediate_accueil_nuit" value="oui" /> OUI
+      <input type="radio" name="immediate_accueil_nuit" value="non" /> NON<br />
+
+      <label>Dans les 6 mois : </label>
+      <input type="radio" name="dans_6_mois_accueil_nuit" value="oui" /> OUI
+      <input type="radio" name="dans_6_mois_accueil_nuit" value="non" />
+      NON<br />
+
+      <label>Échéance plus lointaine : </label>
+      <input type="radio" name="echeance_lointaine_accueil_nuit" value="oui" />
+      OUI
+      <input type="radio" name="echeance_lointaine_accueil_nuit" value="non" />
+      NON<br />
+
+      <label>Date exacte (le cas échéant) : </label
+      ><input type="date" name="date_exacte_accueil_nuit" /><br />
+
+      <label>Nombre de nuits par semaine/mois : </label>
+      <input type="number" name="nb_nuits_accueil_nuit" /><br /><br />
+
+      <label>Admission avec le conjoint souhaitée : </label>
+      <input type="radio" name="admission_conjoint_accueil_nuit" value="oui" />
+      OUI
+      <input type="radio" name="admission_conjoint_accueil_nuit" value="non" />
+      NON<br />
+
+      <label for="Commentaire de l'établissement "></label>
+      <input type="text" name="Commentaire_de_l'etablissement" id="cmt-txt" />
+
+      <hr />
+
+      <h2>2. INFORMATIONS IMPORTANTES</h2>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ex
+        necessitatibus nam culpa ipsam itaque ratione quae cum. Temporibus
+        voluptas pariatur, quidem rerum dolores, alias saepe libero, iste esse
+        iusto ex incidunt mollitia laudantium totam quo tempora doloribus dicta
+        iure natus voluptatem. Possimus neque voluptatum odio ipsa laudantium
+        earum perferendis animi voluptates reiciendis aut, exercitationem quos
+        voluptatibus similique asperiores mollitia necessitatibus iste. Culpa
+        debitis nam optio inventore unde quaerat consequuntur dicta, sit
+        voluptas tempora facilis! Alias libero excepturi eos cupiditate ad aut
+        sint vel, doloribus voluptatem in veritatis tempore explicabo officia
+        aliquam voluptatibus voluptates obcaecati delectus quo? Ducimus iste hic
+        eos aliquam, corrupti consequatur non harum culpa, consequuntur
+        explicabo doloremque error quo, asperiores neque. Saepe laborum esse,
+        facilis pariatur distinctio eius, deserunt a aut optio eaque nihil
+        repellendus perspiciatis deleniti, aspernatur velit iusto exercitationem
+        ex facere. Commodi aperiam corrupti tempora veritatis at nostrum, maxime
+        obcaecati ipsa aliquam enim? Est, impedit.
+      </p>
+
+      <hr />
+
+      <h2>
+        3. COORDONNÉES DES PERSONNES À CONTACTER AU SUJET DE CETTE DEMANDE
+      </h2>
+
+      <h3>Personne A</h3>
+      <label>Nom d’usage : </label
+      ><input type="text" name="nom_usage_A" /><br />
+      <label>Nom de naissance : </label
+      ><input type="text" name="nom_naissance_A" /><br />
+      <label>Prénom : </label><input type="text" name="prenom_A" /><br />
+      <label>Adresse : </label><input type="text" name="adresse_A" /><br />
+      <label>Code postal : </label
+      ><input type="text" name="code_postal_A" /><br />
+      <label>Commune/ville : </label
+      ><input type="text" name="commune_A" /><br />
+      <label>Téléphone fixe : </label
+      ><input type="text" name="telephone_fixe_A" /><br />
+      <label>Téléphone portable : </label
+      ><input type="text" name="telephone_portable_A" /><br />
+      <label>Adresse email : </label><input type="email" name="email_A" /><br />
+
+      <label>Proche aidant : </label>
+      <input type="radio" name="proche_aidant_A" value="oui" /> OUI
+      <input type="radio" name="proche_aidant_A" value="non" /> NON<br />
+
+      <label>Personne de confiance : </label>
+      <input type="radio" name="personne_confiance_A" value="oui" /> OUI
+      <input type="radio" name="personne_confiance_A" value="non" /> NON<br />
+
+      <h3>Personne B</h3>
+      <!-- Répéter la même structure pour Personne B -->
+
+      <hr />
+
+      <h2>4. PROTECTION JURIDIQUE</h2>
+
+      <label>Mesure de protection juridique : </label>
+      <input type="radio" name="protection_juridique" value="oui" /> OUI
+      <input type="radio" name="protection_juridique" value="non" /> NON
+      <input type="radio" name="protection_juridique" value="en_cours" /> EN
+      COURS<br />
+
+      <label>Si OUI, laquelle : </label><br />
+      <input type="radio" name="type_protection" value="tutelle" /> Tutelle
+      <input type="radio" name="type_protection" value="curatelle" /> Curatelle
+      <input type="radio" name="type_protection" value="sauvegarde" />
+      Sauvegarde de justice
+      <input type="radio" name="type_protection" value="habilitation" />
+      Habilitation familiale<br />
+
+      <hr />
+
+      <h2>6. ASPECTS FINANCIERS</h2>
+
+      <label
+        >Comment la personne concernée pense-t-elle financer ses frais de séjour
+        ?</label
+      ><br />
+      <input type="checkbox" name="financement" value="seule" /> Seule<br />
+      <input type="checkbox" name="financement" value="tiers" /> Obligés
+      alimentaires ou autres tiers<br />
+      <input type="checkbox" name="financement" value="caisse_retraite" />
+      Caisse de retraite<br />
+      <input type="checkbox" name="financement" value="aide_sociale" /> Aide
+      sociale à l’hébergement<br />
+      <input type="checkbox" name="financement" value="apl" /> Aide
+      personnalisée au logement (APL)<br />
+      <input type="checkbox" name="financement" value="autre" /> Autre :
+      <input type="text" name="financement_autre" /><br />
+
+      <button type="button" onclick="genererPDF()">Générer le PDF</button>
+    </form>
+    <script src="./js.js"></script>
+    <script src="./html2pdfversion.js"></script>
+  </body>
+</html>
